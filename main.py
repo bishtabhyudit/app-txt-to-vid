@@ -44,13 +44,13 @@ os.remove(chrome_driver_file)
 # Path to the ChromeDriver executable file
 chrome_driver_path = os.path.abspath("chromedriver.exe")
 
-prompt = event['queryStringParameter']['prompt']
-# prompt = """
-# a tiktok style video for a new gym clothing line for men and women. 
-# This product line uses latest technology fabrics which is best in class for fitness and workouts."""
+# prompt = event['queryStringParameter']['prompt']
+prompt = """
+a tiktok style video for a new gym clothing line for men and women. 
+This product line uses latest technology fabrics which is best in class for fitness and workouts."""
 
-receiver_email = event['queryStringParameter']['receiver_email']
-# receiver_email = 'abhyudit12bisht@gmail.com'
+# receiver_email = event['queryStringParameter']['receiver_email']
+receiver_email = 'abhyudit12bisht@gmail.com'
 
 url = "https://ai.invideo.io/login"
 
