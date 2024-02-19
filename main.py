@@ -249,9 +249,3 @@ with smtplib.SMTP('smtp.gmail.com', 587) as server:
     # Send the email
     server.sendmail(sender_email, receiver_email, msg.as_string())
     print("Email sent successfully!")
-
-
-return {
-    'statusCode': 200,
-    'body': json.dumps('Request will be completed shortly.')
-}
