@@ -20,7 +20,10 @@ from email.mime.text import MIMEText
 from selenium.webdriver.chrome.service import Service
 
 
-os.makedirs('/tmp/downloaded')
+try:
+    os.makedirs('/tmp/downloaded')
+except:
+    pass
 temp_dir = '/tmp/downloaded'
 # Define the URL to download ChromeDriver
 chrome_driver_url = "https://storage.googleapis.com/chrome-for-testing-public/121.0.6167.184/linux64/chrome-linux64.zip"
